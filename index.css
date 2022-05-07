@@ -119,8 +119,8 @@ main{
     transition: transform var(--transition-speed);
 }
 
-.navbar:hover .logo i{
-    transform:rotate(-180deg);
+.navbar:hover .logo svg{
+    transform:rotate(-540deg);
 }
 
 /* TELA PEQUENA */
