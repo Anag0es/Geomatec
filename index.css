@@ -18,10 +18,15 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    height: 0;
-    width: 0;
+    height: 100%;
+    width: 78px;
     background: #11101d;
     padding: 6px 14px;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active{
+    width: 240px;
 }
 
 .sidebar .logo_content .logo{
@@ -30,6 +35,15 @@ body{
     height: 50px;
     width: 100%;
     align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+
+}
+
+.sidebar.active .logo_content .logo{
+    opacity: 1;
+    pointer-events: none;
 }
 
 .logo_content .logo i{
@@ -45,7 +59,7 @@ body{
 .sidebar #btn{
     position: absolute;
     color: #fff;
-    left: 90%;
+    left: 50%;
     top: 6px;
     font-size: 20px;
     height: 50px;
@@ -53,6 +67,10 @@ body{
     text-align: center;
     line-height: 50px;
     transform: translateX(-50%);
+}
+
+.sidebar.active #btn{
+    left: 90%;
 }
 
 .sidebar ul{
@@ -71,8 +89,8 @@ body{
 .sidebar ul li .tooltip{
     position: absolute;
     left: 122px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
+    transform: translate(-50%, -50%);
     border-radius: 6px;
     height: 35px;
     width: 122px;
@@ -82,6 +100,10 @@ body{
     transition: 0s;
     opacity: 0;
     pointer-events: none;
+}
+
+.sidebar.active ul li .tooltip{
+    display: none;
 }
 
 .sidebar ul li:hover .tooltip{
@@ -104,6 +126,19 @@ body{
     color: #fff;
 }
 
+.sidebar ul li .bx-search{
+    position: absolute;
+    z-index: 99;
+    color:#fff;
+    font-size: 22px;
+    transition: all 0.5 ease;
+}
+
+.sidebar ul li .bx-search:hover{
+    background: #fff;
+    color: #1d1b31;
+}
+
 .sidebar ul li a{
     color: #fff;
     display: flex;
@@ -111,6 +146,7 @@ body{
     text-decoration: none;
     transition: all 0.4s ease;
     border-radius: 12px;
+    white-space: nowrap;
 }
 
 
@@ -119,10 +155,23 @@ body{
     background: #fff;
 }
 
-.sidebar ul li a i{
+.sidebar ul li i{
     height: 50px;
     min-width: 50px;
     border-radius: 12px;
     line-height: 50px;
     text-align: center;
 }
+
+.sidebar .links_name{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active .links_name{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
