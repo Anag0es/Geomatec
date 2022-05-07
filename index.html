@@ -9,65 +9,26 @@
     <title>geomatec</title>
 </head>
 <body>
-   <div class="sidebar">
-     <div class="logo_content">
-       <div class="logo">
-        <i class='bx bx-train'></i>
-         <div class="logo_name">geomatec</div>
-       </div>
-       <i class='bx bx-menu-alt-left' id="btn"></i>
-     </div>
-     <ul class="nav_list">
-       <li>
-         <a href="#">
-          <i class='bx bx-search-alt' ></i>
-          <input type="text" placeholder="Search...">
-         <!-- <span class="links_name">Dashboard</span> --> 
-         </a>
-       </li>
-       <li>
-         <a href="#">
-          <i class='bx bx-home' ></i>
-          <span class="links_name">Home</span>
-         </a>
-         <span class="tooltip">Home</span>
-       </li>
-       <li>
-        <a href="#">
-          <i class='bx bxs-camera' ></i>
-         <span class="links_name">registros</span>
+  <nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="logo">
+        <span class="link_text">Geomatec</span>
+        <a href="#" class="nav-link">
+          <i class='bx bx-train'></i>
         </a>
-        <span class="tooltip">registros</span>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link"></a>
+        <i class='bx bx-camera'></i>
+        <span class="link_text">registros</span>
+      </li>
+      <li class="nav_item">
+        <a href="#" class="nav_link"></a>
+        <i class='bx bxs-contact'></i>
+        <span class="link_text">contato</span>
 
       </li>
-       <li>
-        <a href="#">
-          <i class='bx bxs-contact' ></i>
-         <span class="links_name">contato</span>
-        </a>
-        <span class="tooltip">contato</span>
-      </li>
-     </ul>
-   </div>
-
-   <h1>GEOMATEC</h1>
-   <span>Eletiva 2022 - Jaque e Nadir</span>
-
-
-
-   <script>
-     let btn = document.querySelector("#btn");
-     let sidebar = document.querySelector(".sidebar");
-     let serachBtn = document.querySelector("bx-search");
-
-     btn.onclick = function() {
-       sidebar.classList.toggle("active");
-     }
-     
-     searchBtn.onclick = function() {
-       sidebar.classList.toggle("active");
-     }
-   </script>
-
+    </ul>
+  </nav> 
 </body>
 </html>
