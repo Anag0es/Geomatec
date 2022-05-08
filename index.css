@@ -55,7 +55,7 @@ body{
 .navigation ul li b:nth-child(1){
     position: absolute;
     top: -20px;
-    height: 20p;
+    height: 20px;
     width: 100%;
     background: #fff;
     display: none;
@@ -76,7 +76,7 @@ body{
 .navigation ul li b:nth-child(2){
     position: absolute;
     bottom: -20px;
-    height: 20p;
+    height: 20px;
     width: 100%;
     background: #fff;
     display: none;
