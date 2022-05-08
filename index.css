@@ -108,7 +108,7 @@ body{
     color: #fff;
 }
 
-.navigation ul li a.active a{
+.navigation ul li.active a{
     color: #333;
 }
 
