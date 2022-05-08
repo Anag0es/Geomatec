@@ -17,12 +17,12 @@ body{
     top: 20px;
     left: 20px;
     bottom: 20px;
-    width: 300px;
+    width: 70px;
     border-radius: 10px;
     box-sizing: initial;
     border-left: 5px solid #4d5bf9;
     background: #4d5bf9;
-    transition: 0.5s;
+    transition: width 0.5s;
     overflow-x: hidden;
 }
 
@@ -97,8 +97,6 @@ body{
 .navigation ul li.active b:nth-child(2){
     display: block;
 }
-
-
 
 
 .navigation ul li a{
