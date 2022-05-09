@@ -4,81 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
     <title>geomatec</title>
 </head>
 <body>
-  <div class="navigation">
-    <ul>
-      <li class="list active">
-        <b></b>
-        <b></b>
-        <a href="#">
-          <span class="icon"><ion-icon 
-            name="home-outline"></ion-icon></span>
-          <span class="title">Home</span>
-        </a>
-      </li>
-      <li class="list">
-        <b></b>
-        <b></b>
-        <a href="#">
-          <span class="icon"><ion-icon 
-            name="chatbubbles-outline"></ion-icon></span>
-          <span class="title">Contato</span>
-        </a>
-      </li>
-      <li class="list">
-        <b></b>
-        <b></b>
-        <a href="#">
-          <span class="icon"><ion-icon 
-            name="images-outline"></ion-icon></span>
-          <span class="title">registros</span>
-        </a>
-      </li>
-      <li class="list">
-        <b></b>
-        <b></b>
-        <a href="#">
-          <span class="icon"><ion-icon 
-            name="code-slash-outline"></ion-icon></span>
-          <span class="title">sobre o projeto</span>
-        </a>
-      </li>
-    </ul>
-  </div>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="logo.png" alt="logo">
+                </span>
+                <div class="text header-text">
+                    <span class="name">Geomatec</span>
+                    <span class="profession">Eletiva 2022</span>
+                </div>
+            </div>
 
-  <div class="toggle">
-    <ion-icon name="menu-outline" class="open"></ion-icon>
-    <ion-icon name="close-circle-outline" class="close"></ion-icon>
-  </div>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    <i class='bx bx-search-alt-2 icon' ></i>
+                        <input type="text" placeholder="search...">
+                    </a>
+                  </li>
+                <ul class="menu-links">
+                  <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-home icon' ></i>
+                        <span class="text nav-text">Home</span>
+                    </a>
+                  </li>
+                  <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-camera icon'></i>
+                        <span class="text nav-text">Registros</span>
+                    </a>
+                  </li>
+                  <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bxs-contact icon' ></i>
+                        <span class="text nav-text">Contato</span>
+                    </a>
+                  </li>
+                </ul>
+            </div>
+            <div class="bottom-content">
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class="bx bx-moon icon moon"></i>
+                        <i class="bx bx-sun icon sun"></i>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
 
-  <h1>GEOMATEC <ion-icon name="train-outline"></ion-icon></h1>
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
 
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-<script>
-  let menuToggle = document.querySelector('.toggle');
-  let navigation = document.querySelector('.navigation')
-  menuToggle.onclick = function(){
-    menuToggle.classList.toggle('active');
-    navigation.classList.toggle('active');
-  }
+    <section class="home">
+        <div class="text">Geomatec - Eletiva 2022</div>
+        <p><b>Objetivo: </b>Os alunos da escola E.E. Astrlogildo Arruda com o auxilio das professoras Nadir e Jaqueline, vem por meio desse site</p>
+        <p>mostrar como foi construído o trem da estação da luz ao longo do ano.</p>
+    </section>
 
 
 
-  let list = document.querySelectorAll('.list');
-  for(let i=0; i<list.length; i++){
-    list[i].onclick = function(){
-      let j = 0;
-      while(j < list.length){
-        list[j++].className = 'list';
-      }
-      list[i].className = 'list active';
-    }
-  }
-</script>
+
+
+
+
+    <script>
+        const body = document.querySelector("body"),
+     sidebar = body.querySelector(".sidebar"),
+     toggle = body.querySelector(".toggle"),
+     searchBtn = body.querySelector(".search-box"),
+     modeSwitch = body.querySelector(".toggle-switch"),
+     modeText = body.querySelector(".mode-text");
+
+     toggle.addEventListener("click", ()=>{
+         sidebar.classList.toggle("close");
+     });
+
+     modeSwitch.addEventListener("click", ()=>{
+         body.classList.toggle("dark");
+
+         if(body.classList.contains("dark")){
+             modeText.innerText = "Light Mode"
+         }else{
+             modeText.innerText = "Dark Mode"
+         }
+     });
+
+
+    </script>
 </body>
 </html>
