@@ -46,13 +46,14 @@ footer{
 
 .footer-content h3{
     font-size: 1.8rem;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: capitalize;
     line-height: 3rem;
 }
 
 .footer-content p{
     max-width: 500px;
+    font-weight: 500;
     margin: 10px auto;
     line-height: 28px;
     font: 14px;
@@ -85,7 +86,7 @@ footer{
 }
 
 .footer-bottom{
-    background: #000;
+    background: var(--toggle-color);
     width: 100vw;
     padding: 20px 0;
     text-align: center;
@@ -101,6 +102,7 @@ footer{
     text-transform: uppercase;
     opacity: .4;
     font-weight: 200;
+    color: var(--text-color);
 }
 
 .sidebar.close ~ footer{
