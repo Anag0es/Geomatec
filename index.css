@@ -305,3 +305,18 @@ p{
     font-weight: 400;
     color: var(--text-color);
 }
+
+/* === MOBILE === */
+@media(max-width: 600px){
+    .sidebar{
+        width: 100vw;
+    }
+
+    .sidebar header .toggle{
+        margin-right: -01px;
+    }
+
+    .text{
+        text-align: center;
+    }
+}
