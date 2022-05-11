@@ -31,7 +31,7 @@ footer{
     right: 0;
     background-color: var(--sidebar-color);
     height: auto;
-    width: 100vw;
+    width: calc(100% - 250px);
     font-family: "open sanas";
     padding-top: 40px;
     color: var(--text-color);
@@ -46,7 +46,6 @@ footer{
 
 .footer-content h3{
     position: relative;
-    width: calc(100% - 250px);
     text-align: center;
     font-size: 1.8rem;
     font-weight: 500;
@@ -55,7 +54,6 @@ footer{
 }
 
 .footer-content p{
-    width: calc(100% - 250px);
     max-width: 500px;
     font-weight: 500;
     margin: 10px auto;
@@ -110,7 +108,6 @@ footer{
     opacity: .4;
     font-weight: 200;
     color: var(--text-color);
-    width: calc(100% - 250px);
 }
 
 .sidebar.close ~ footer{
