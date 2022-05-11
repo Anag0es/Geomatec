@@ -103,7 +103,8 @@ footer{
     font-weight: 200;
 }
 
-.sidebar.close ~ .footer-content{
+.sidebar.close ~ footer{
     left: 88px;
     width: calc(100% - 88px);
 }
+
