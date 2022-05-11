@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+:root{
+    /* COLORS */
+    --body-color: #e4e9f7;
+    --sidebar-color: #fff;
+    --primary-color:#695cfe;
+    --primary-color-light: #f6f5ff;
+    --toggle-color: #ddd;
+    --text-color: #707070;
+
+    /* TRANSITION */
+    --tran-02: all 0.2 ease;
+    --tran-03: all 0.3 ease;
+    --tran-04: all 0.4 ease;
+    --tran-05: all 0.5 ease;
+}
+
 
 
 *{
@@ -13,12 +29,12 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #ccc;
+    background-color: var(--sidebar-color);
     height: auto;
     width: 100vw;
     font-family: "open sanas";
     padding-top: 40px;
-    color: #fff;
+    color: var(--text-color);
 }
 
 .footer-content{
@@ -85,4 +101,9 @@ footer{
     text-transform: uppercase;
     opacity: .4;
     font-weight: 200;
+}
+
+.sidebar.close ~ .footer-content{
+    left: 88px;
+    width: calc(100% - 88px);
 }
