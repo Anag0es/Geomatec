@@ -47,6 +47,7 @@ footer{
 .footer-content h3{
     position: relative;
     width: calc(100% - 250px);
+    text-align: center;
     font-size: 1.8rem;
     font-weight: 500;
     text-transform: capitalize;
