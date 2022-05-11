@@ -86,10 +86,11 @@ footer{
 }
 
 .footer-bottom{
-    background: var(--toggle-color);
+    background: var(--sidebar-color);
     width: 100vw;
     padding: 20px 0;
     text-align: center;
+    color: var(--text-color);
 }
 
 .footer-bottom p{
@@ -105,7 +106,7 @@ footer{
     color: var(--text-color);
 }
 
-.sidebar.close ~ footer{
+.sidebar.close ~ footer .footer-bottom{
     left: 88px;
     width: calc(100% - 88px);
 }
