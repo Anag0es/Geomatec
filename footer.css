@@ -16,25 +16,25 @@
     --tran-05: all 0.5 ease;
 }
 
-
-
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     background-color: var(--sidebar-color);
-    height: auto;
-    width: calc(100% - 250px);
-    font-family: "open sanas";
+    width: 100vw;
     padding-top: 40px;
     color: var(--text-color);
+    height: calc(100% -50px);
+}
+
+.div{
+    display: block;
 }
 
 .footer-content{
@@ -45,8 +45,6 @@ footer{
 }
 
 .footer-content h3{
-    position: relative;
-    text-align: center;
     font-size: 1.8rem;
     font-weight: 500;
     text-transform: capitalize;
@@ -55,36 +53,10 @@ footer{
 
 .footer-content p{
     max-width: 500px;
-    font-weight: 500;
     margin: 10px auto;
     line-height: 28px;
-    font: 14px;
-}
-
-.socials{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem 0;
-}
-
-.socials li{
-    margin: 0 10px;
-}
-
-.socials a{
-    text-decoration: none;
-    color: #fff;
-}
-
-.socials a i{
-    font-size: 1.1rem;
-    transition: color .4s ease;
-}
-
-.socials a:hover i{
-    color: darkgray;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .footer-bottom{
@@ -96,11 +68,9 @@ footer{
 }
 
 .footer-bottom p{
-    text-align: center;
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
-    width: calc(100% - 250px);
 }
 
 .footer-bottom span{
@@ -115,3 +85,18 @@ footer{
     width: calc(100% - 88px);
 }
 
+.sidebar-close footer .footer-bottom{
+    left: 88px;
+    width: calc(100% - 88px);
+}
+
+/* ==== MOBILE ==== */
+@media(max-width: 600px){
+    footer{
+        width: 100vw;
+    }
+
+    .footer-bottom p{
+        padding-right: 90px;
+    }
+}
