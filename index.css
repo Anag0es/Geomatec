@@ -50,6 +50,7 @@ nav{
     height: 2px;
     background: #fff;
     margin: 8px;
+    transition: 0.3s;
 }
 
 
@@ -97,4 +98,13 @@ nav{
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+
+.mobile-menu.active .line1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2{
+    opacity: 0;
 }
