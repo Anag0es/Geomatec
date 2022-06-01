@@ -138,3 +138,57 @@ img{
     margin-bottom:0;
   }
   
+
+/* === ICON === */
+a img{
+  padding-top: 12px;
+  width: 70px;
+  height: 80px;
+}
+
+/* === IMG-METRO=== */
+.metro{
+  width: 350px;
+  height: 250px;
+  margin-left: 120px;
+  border-radius: 4px;
+}
+
+.textespec{
+  padding-left: 350px;
+  text-align: center;
+}
+
+/* === CAROUSEL === */
+.carousel-inner{
+  width: 750px;
+  height: 550px;
+  margin: auto;
+}
+
+#carouselExampleControls{
+  margin: auto;
+}
+
+/* === TEXTO - RESGITRO.HTML === */
+.registro{
+  text-align: center;
+}
+
+.reg1{
+  text-align: center;
+}
+
+/* === CARD === */
+.card{
+  width: 470px;
+  height: 400px;
+  margin-left: 60px;
+}
+
+
+.card-img-top{
+  width: 450px;
+  height: 350px;
+  margin: auto;
+}
