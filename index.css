@@ -69,6 +69,9 @@ section{
     padding-left: 20px;
 }
 
+h2{
+    text-align: center;
+}
 /* === IMG === */
 img{
     padding-top: 30px;
@@ -76,15 +79,18 @@ img{
 }
 
 
+
 /* === FOOTER === */
+
+
 .footer-basic {
-    margin-bottom: 90px;
+    margin-bottom: 0;
     padding:40px 0;
     background-color:#ffffff;
     color:#4b4c4d;
   }
   
-  .footer-basic ul {
+.footer-basic ul {
     padding:0;
     list-style:none;
     text-align:center;
@@ -93,7 +99,7 @@ img{
     margin-bottom:0;
   }
   
-  .footer-basic li {
+.footer-basic li {
     padding:0 10px;
   }
   
@@ -170,6 +176,28 @@ a img{
   margin: auto;
 }
 
+.carousel-control{
+    filter: invert(1);
+    color: #23232e;
+}
+
+.carousel-control-prev{
+    border-radius: 20px;
+    background-color: #23232e;
+    margin-left: 80px;
+    margin-bottom: 200px;
+    margin-top: 200px;
+    margin-right: 80px;
+}
+
+.carousel-control-next{
+    border-radius: 20px;
+    background-color: #23232e;
+    margin-left: 80px;
+    margin-bottom: 200px;
+    margin-top: 200px;
+    margin-right: 80px;
+}
 /* === TEXTO - RESGITRO.HTML === */
 .registro{
   text-align: center;
@@ -179,16 +207,90 @@ a img{
   text-align: center;
 }
 
+.i1{
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 20px;
+    text-align: center;
+}
+
 /* === CARD === */
 .card{
+    display: inline-block;
   width: 470px;
   height: 400px;
-  margin-left: 60px;
+  margin-left: 120px;
 }
 
 
 .card-img-top{
   width: 450px;
   height: 350px;
-  margin: auto;
+  padding-left: 05px;
+  margin-left: 7px;
+}
+
+/* === VIDEO 01 === */
+.mp1{
+    padding-top: 55px;
+    padding-bottom: 25px;
+    margin-left: 400px;
+}
+
+.txtv1{
+    font-size: 20px;
+    text-align: center;
+}
+
+/* === GRID DE IMAGENS ==== */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.gallery__item--2 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.gallery__item--3 {
+    margin-right: 15px;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.gallery__item--4 {
+    padding-top: 30px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 9;
+}
+
+.gallery__item--6 {
+    height: 240px;
+    width: 660px;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+p{
+    font-size: 20px;
+    grid-column-start: 3;
+    grid-column-end: 9;
 }
