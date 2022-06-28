@@ -306,8 +306,32 @@ p{
   padding-top: 0px;
 }
 
+/* === GRID === */
+.grid02{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
-/* === SLIDE === */
+.img1{
+  grid-column: 1;
+  height: 293px;
+  width: 600px;
+}
+
+.img2{
+  grid-column: 2;
+  height: 293px;
+  width: 600px;
+}
+
+.img3{
+  grid-column: 3;
+  height: 293px;
+  width: 600px;
+}
+
+
+/* === SLIDE === 
 .slider input {
   display: none;
 }
@@ -367,3 +391,4 @@ p{
   width: 100%;
   vertical-align: top;
 }
+*/
