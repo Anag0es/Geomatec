@@ -29,7 +29,7 @@ nav{
   font-family: 'Poppins', sans-serif;
   background: black;
   height: 8vh;
-  width: 100%;
+  width: 100vw;
   z-index: 2;
   position: fixed;
 }
@@ -308,27 +308,6 @@ p{
 
 
 /* === SLIDE === */
-.slider {
-  display: block;
-  height: 293px;
-  width: 600px;
-  margin: auto;
-  margin-top: 20px;
-  position: relative;
-}
-
-.slider li {
-  list-style: none;
-  position: absolute;
-}
-
-.slider img {
-  margin: auto;
-  height: 100%;
-  width: 100%;
-  vertical-align: top;
-}
-
 .slider input {
   display: none;
 }
@@ -366,4 +345,25 @@ p{
   opacity: 1;
   visibility: visible;
   z-index: 10;
+}
+
+.slider {
+  display: block;
+  height: 293px;
+  width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+.slider li {
+  list-style: none;
+  position: absolute;
+}
+
+.slider img {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  vertical-align: top;
 }
