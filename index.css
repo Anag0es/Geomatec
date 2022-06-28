@@ -23,12 +23,15 @@ a:hover{
 }
 
 nav{
+   position: fixed;
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    background: #8484d3;
+    background: black;
     height: 8vh;
+    width: 100%;
+    z-index: 2;
 }
 
 .nav-list{
@@ -71,6 +74,10 @@ section{
 
 h2{
     text-align: center;
+}
+
+.espec p{
+  text-align: center;
 }
 /* === IMG === */
 img{
@@ -293,4 +300,70 @@ p{
     font-size: 20px;
     grid-column-start: 3;
     grid-column-end: 9;
+}
+
+.card p img{
+  padding-top: 0px;
+}
+
+
+/* === SLIDE === */
+.slider {
+  display: block;
+  height: 293px;
+  width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+.slider li {
+  list-style: none;
+  position: absolute;
+}
+
+.slider img {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  vertical-align: top;
+}
+
+.slider input {
+  display: none;
+}
+
+.slider label {
+  background-color: black;
+  border-radius: 5px;
+  bottom: 10px;
+  cursor: pointer;
+  display: block;
+  height: 20px;
+  position: absolute;
+  width: 20px;
+  z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+  left: 10px;
+}
+
+.slider li:nth-child(2) label {
+  left: 40px;
+}
+
+.slider li:nth-child(3) label {
+  left: 70px;
+}
+
+.slider img {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
 }
